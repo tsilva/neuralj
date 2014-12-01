@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="BackPropagation GUI"/>
+    <Property name="name" type="java.lang.String" value="MainForm"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="groupPrediction" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="groupNetworkTopology" max="32767" attributes="1"/>
+                          <Component id="groupLearningParameters" min="-2" max="-2" attributes="1"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="groupExecution" max="32767" attributes="1"/>
+                          <Component id="groupTrainingParameters" alignment="0" max="32767" attributes="1"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="groupTrainingParameters" max="32767" attributes="1"/>
+                  <Component id="groupNetworkTopology" alignment="0" min="-2" max="-2" attributes="1"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="groupExecution" min="0" pref="189" max="32767" attributes="1"/>
+                  <Component id="groupLearningParameters" alignment="0" min="-2" max="-2" attributes="1"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="groupPrediction" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="groupNetworkTopology">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+            <EtchetBorder/>
+          </Border>
+        </Property>
+        <Property name="name" type="java.lang.String" value="f"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="labelHidden2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelHidden1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelInput" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelOutput" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelHidden3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="spinnerHidden1" alignment="0" pref="141" max="32767" attributes="1"/>
+                              <Component id="spinnerHidden2" alignment="0" pref="141" max="32767" attributes="1"/>
+                              <Component id="spinnerHidden3" alignment="0" pref="141" max="32767" attributes="1"/>
+                              <Component id="spinnerOutput" alignment="0" pref="141" max="32767" attributes="1"/>
+                              <Component id="spinnerInput" alignment="0" pref="141" max="32767" attributes="1"/>
+                          </Group>
+                      </Group>
+                      <Component id="labelNetworkTopology" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="labelNetworkTopology" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelInput" alignment="3" min="-2" max="-2" attributes="1"/>
+                      <Component id="spinnerInput" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelHidden1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="spinnerHidden1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelHidden2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="spinnerHidden2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelHidden3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="spinnerHidden3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelOutput" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="spinnerOutput" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="labelInput">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Input Neurons:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelOutput">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Output Neurons:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelHidden1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Hidden Neurons (1): "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelHidden2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Hidden Neurons (2):"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelHidden3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Hidden Neurons (3):"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spinnerInput">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="spinnerInputNeurons"/>
+            <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerInputStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spinnerHidden1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="spinnerHiddenNeuronsOne"/>
+          </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerHidden1StateChanged"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spinnerHidden2">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="spinnerHiddenNeuronsTwo"/>
+          </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerHidden2StateChanged"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spinnerHidden3">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="spinnerHiddenNeuronsThree"/>
+          </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerHidden3StateChanged"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spinnerOutput">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="spinnerOutputNeurons"/>
+          </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerOutputStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelNetworkTopology">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Network Topology"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="groupTrainingParameters">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+            <EtchetBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="labelValidationLog" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelTrainingLog" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txtValidationLogFile" pref="97" max="32767" attributes="0"/>
+                              <Component id="txtTrainingLogFile" alignment="0" pref="97" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="labelTrainingParameters" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelTrainingFile" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          <Component id="txtTrainingFile" pref="97" max="32767" attributes="1"/>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="btnOpenTrainingLogFile" alignment="0" min="0" pref="0" max="32767" attributes="1"/>
+                              <Component id="btnOpenTrainingFile" alignment="0" pref="47" max="32767" attributes="1"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          <Component id="btnOpenValidationLogFile" min="-2" pref="47" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="labelTrainingParameters" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelTrainingFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnOpenTrainingFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtTrainingFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelTrainingLog" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtTrainingLogFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnOpenTrainingLogFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelValidationLog" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtValidationLogFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnOpenValidationLogFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="19" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="labelTrainingFile">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Training file:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtTrainingFile">
+          <Properties>
+            <Property name="enabled" type="boolean" value="false"/>
+            <Property name="name" type="java.lang.String" value="txtTrainingFile"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnOpenTrainingFile">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="..."/>
+            <Property name="name" type="java.lang.String" value="btnOpenTrainingFile"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnOpenTrainingFileMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelTrainingParameters">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Training parameters"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelTrainingLog">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Training log:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelValidationLog">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Validation log:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtTrainingLogFile">
+          <Properties>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtValidationLogFile">
+          <Properties>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnOpenTrainingLogFile">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="..."/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnOpenTrainingLogFileMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnOpenValidationLogFile">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="..."/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnOpenValidationLogFileMouseClicked"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="groupLearningParameters">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+            <EtchetBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="labelLearningParameters" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="labelLearningAlgorithm" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelMomentum" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelLearningRate" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelActivationFunction" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelMSE" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelEpochs" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txtMSE" alignment="0" pref="129" max="32767" attributes="1"/>
+                              <Component id="txtLearningRate" alignment="0" pref="129" max="32767" attributes="1"/>
+                              <Component id="comboActivation" alignment="0" pref="129" max="32767" attributes="1"/>
+                              <Component id="txtMomentum" alignment="0" pref="129" max="32767" attributes="1"/>
+                              <Component id="comboLearning" alignment="0" pref="129" max="32767" attributes="1"/>
+                              <Component id="spinnerEpochs" alignment="0" pref="129" max="32767" attributes="1"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="labelLearningParameters" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelEpochs" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="spinnerEpochs" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelMSE" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtMSE" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelLearningRate" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtLearningRate" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelMomentum" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtMomentum" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelLearningAlgorithm" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="comboLearning" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelActivationFunction" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="comboActivation" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="labelEpochs">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Epochs:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelMSE">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Mean Squared Error:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelLearningRate">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Learning Rate:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spinnerEpochs">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="spinnerEpochs"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtMSE">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="0.001"/>
+            <Property name="name" type="java.lang.String" value="txtMSE"/>
+          </Properties>
+          <Events>
+            <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="txtMSEPropertyChange"/>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtMSEKeyTyped"/>
+            <EventHandler event="vetoableChange" listener="java.beans.VetoableChangeListener" parameters="java.beans.PropertyChangeEvent" handler="txtMSEVetoableChange"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtLearningRate">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="1.0"/>
+            <Property name="name" type="java.lang.String" value="txtLearningRate"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtMomentum">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="0.1"/>
+            <Property name="name" type="java.lang.String" value="txtMomentum"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelMomentum">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Momentum:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="comboLearning">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Item 1"/>
+                <StringItem index="1" value="Item 2"/>
+                <StringItem index="2" value="Item 3"/>
+                <StringItem index="3" value="Item 4"/>
+              </StringArray>
+            </Property>
+            <Property name="name" type="java.lang.String" value="comboLearningAlgorithm"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="comboLearningItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="comboActivation">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Item 1"/>
+                <StringItem index="1" value="Item 2"/>
+                <StringItem index="2" value="Item 3"/>
+                <StringItem index="3" value="Item 4"/>
+              </StringArray>
+            </Property>
+            <Property name="name" type="java.lang.String" value="comboActivationFunction"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="comboActivationItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelLearningAlgorithm">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Learning Algorithm:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelActivationFunction">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Activation Function:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelLearningParameters">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Learning parameters"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="groupExecution">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+            <EtchetBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="labelExecution" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btnStart" min="-2" max="-2" attributes="1"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btnSaveWeights" alignment="0" pref="162" max="32767" attributes="1"/>
+                              <Component id="btnLoadWeights" alignment="0" pref="162" max="32767" attributes="1"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelCurrentStatus" pref="227" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelCurrentMSE" pref="227" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelCurrentEpoch" pref="227" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="labelExecution" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                  <Component id="labelCurrentEpoch" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="labelCurrentMSE" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="labelCurrentStatus" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="btnLoadWeights" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btnSaveWeights" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="btnStart" max="32767" attributes="1"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="labelCurrentEpoch">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Number of Epochs: 0"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelCurrentMSE">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Best MSE: 0.00"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelCurrentStatus">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Status: Awaiting input..."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnStart">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Start"/>
+            <Property name="name" type="java.lang.String" value="btnStart"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnStartMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnLoadWeights">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Load Weights"/>
+            <Property name="name" type="java.lang.String" value="btnLoadWeights"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnLoadWeightsMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnSaveWeights">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Save Weights"/>
+            <Property name="name" type="java.lang.String" value="btnSaveWeights"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnSaveWeightsMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelExecution">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Execution"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="groupPrediction">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+            <EtchetBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="labelPrediction" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="177" max="-2" attributes="0"/>
+                          <Component id="btnGuessFile" min="-2" pref="143" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btnGuess" min="-2" pref="143" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" pref="516" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="labelPrediction" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnGuess" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnGuessFile" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="78" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="labelPrediction">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Prediction"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="txtPrediction">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="btnGuess">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Guess (training)"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnGuessMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnGuessFile">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Guess (file)"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnGuessFileMouseClicked"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
