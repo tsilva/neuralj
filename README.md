@@ -2,7 +2,7 @@
 > ## Archived
 > This project is archived and no longer maintained.
 >
-> Java-based neural network libraries have been superseded by modern Python ML frameworks.
+> Very old project done in college back in the dark ages. It was beyond basic at this point and today it's completely worthless. Also Java-based neural network libraries have been superseded by modern Python ML frameworks.
 
 <div align="center">
   <img src="logo.png" alt="neuralj" width="512"/>
