@@ -1,4 +1,4 @@
-> [!CAUTION]
+> [!WARNING]
 > ## Archived
 > This project is archived and no longer maintained.
 >
